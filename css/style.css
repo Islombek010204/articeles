@@ -28,7 +28,7 @@ body {
 	display: flex;
 }
 
-.article-left {
+.article__left {
 	width: 50%;
 	height: 100vh;
 	background-image: url(../img/left-bg.jpg);
@@ -42,7 +42,7 @@ body {
 	color: #fff;
 }
 
-.article-left-info {
+.article__left-info {
 	min-width: 285px;
 	width: 100%;
 	display: flex;
@@ -51,14 +51,14 @@ body {
 	align-items: center;
 }
 
-.article-left-title {
+.article__left-title {
 	margin-top: 0;
 	margin-bottom: 24px;
 	font-size: 24px;
 	text-transform: uppercase;
 }
 
-.article-left-btn {
+.article__left-btn {
 	display: flex;
 	border: none;
 	padding: 12px 24px;
@@ -69,8 +69,9 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 2px;
+	transition: opacity 0.4s ease;
 }
-.article-left-btn:before {
+.article__left-btn:before {
 	display: inline-block;
 	background-image: url(../img/Vector.svg);
 	background-repeat: no-repeat;
@@ -81,11 +82,121 @@ body {
 	margin-right: 12px;
 	content: '';
 }
-
+.article__left-btn:hover {
+	opacity: 0.8;
+}
+.article__left-btn:active {
+	opacity: 0.6;
+}
 .article-right {
-	max-width: 492px;
-	width: 100%;
+	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 54px;
+}
+
+.article-right__title {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-style: 24px;
+}
+.article-right__line {
+	width: 100%;
+	background-color: #999999;
+	border: none;
+	height: 1px;
+	margin-bottom: 24px;
+}
+.article-right__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
+}
+.article-right__item {
+	display: flex;
+	align-items: center;
+}
+.article-right__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.article-right__img {
+	border-radius: 4px;
+	width: 160px;
+	height: 90px;
+	object-fit: cover;
+	margin-right: 16px;
+}
+.article-right__info {
+	max-width: 307px;
+	width: 100%;
+}
+.article-right__info-title a {
+	color: #222222;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 4px;
+	width: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+.article-right__info-title a:hover {
+	color: #1e90ff;
+}
+.article-right__info-title a:active {
+	opacity: 0.6;
+}
+.article-right__info-view {
+	display: flex;
+}
+.article-right__info-text {
+	display: flex;
+	color: #888888;
+	font-size: 14px;
+	font-weight: 400;
+}
+.article-right__info-text:not(:last-child) {
+	margin-right: 24px;
+}
+.article-right__info-text:before {
+	display: inline-block;
+	background-image: url(../img/icon-clock\ 1.svg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+	content: '';
+}
+.article-right__info-texti:before {
+	display: inline-block;
+	background-image: url(../img/eyer.svg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+	content: '';
+}
+.btn {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background-color: #1e90ff;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	border: 1px solid transparent;
+	transition: all 0.4s ease;
+}
+.btn:hover {
+	border: 1px solid #1e90ff;
+	background-color: #fff;
+	color: #222222;
 }
