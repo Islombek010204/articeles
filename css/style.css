@@ -52,6 +52,7 @@ body {
 }
 
 .article__left-title {
+	max-width: 285px;
 	margin-top: 0;
 	margin-bottom: 24px;
 	font-size: 24px;
